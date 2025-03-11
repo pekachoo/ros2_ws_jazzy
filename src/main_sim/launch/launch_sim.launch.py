@@ -10,7 +10,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 
 #opens gazebo, launches world, and spawns robot
-
+#REMEMBER TO INCORPORATE YAML FILE TO PASS THROUGH URDF AS PARAMETER
 def generate_launch_description():
 
     package_name='main_sim'
