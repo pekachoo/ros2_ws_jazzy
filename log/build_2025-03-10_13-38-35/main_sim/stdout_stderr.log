@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/__pycache__/spawn_robot.launch.cpython-310.pyc
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/joystick.launch.py
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_custom_world.launch.py
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_jsp.launch.py
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_robot.launch.py
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_sim.launch.py
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/robot_state_publisher.launch.py
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/spawn_robot.launch.py
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/package_run_dependencies/main_sim
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/parent_prefix_path/main_sim
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/path.sh
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/path.dsv
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.bash
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.sh
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.zsh
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.dsv
+-- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/package.dsv
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/packages/main_sim
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/cmake/main_simConfig.cmake
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/cmake/main_simConfig-version.cmake
+-- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/package.xml

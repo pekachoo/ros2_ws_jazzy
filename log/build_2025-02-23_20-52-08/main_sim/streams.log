@@ -1,0 +1,65 @@
+[0.011s] Invoking command in '/home/jason/ros2_ws/build/main_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jason/ros2_ws/src/main_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jason/ros2_ws/install/main_sim
+[0.067s] -- The C compiler identification is GNU 13.3.0
+[0.129s] -- The CXX compiler identification is GNU 13.3.0
+[0.143s] -- Detecting C compiler ABI info
+[0.231s] -- Detecting C compiler ABI info - done
+[0.240s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.240s] -- Detecting C compile features
+[0.240s] -- Detecting C compile features - done
+[0.248s] -- Detecting CXX compiler ABI info
+[0.355s] -- Detecting CXX compiler ABI info - done
+[0.364s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.364s] -- Detecting CXX compile features
+[0.364s] -- Detecting CXX compile features - done
+[0.368s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.514s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.587s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.630s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.683s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.699s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.721s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.742s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.831s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.835s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.921s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.945s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.977s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.064s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.084s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.205s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.205s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.206s] -- Added test 'lint_cmake' to check CMake code style
+[1.207s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.209s] -- Added test 'xmllint' to check XML markup files
+[1.212s] -- Configuring done (1.2s)
+[1.215s] -- Generating done (0.0s)
+[1.217s] -- Build files have been written to: /home/jason/ros2_ws/build/main_sim
+[1.228s] Invoked command in '/home/jason/ros2_ws/build/main_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jason/ros2_ws/src/main_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jason/ros2_ws/install/main_sim
+[1.229s] Invoking command in '/home/jason/ros2_ws/build/main_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jason/ros2_ws/build/main_sim -- -j7 -l7
+[1.274s] Invoked command in '/home/jason/ros2_ws/build/main_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jason/ros2_ws/build/main_sim -- -j7 -l7
+[1.283s] Invoking command in '/home/jason/ros2_ws/build/main_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jason/ros2_ws/build/main_sim
+[1.293s] -- Install configuration: ""
+[1.293s] -- Execute custom install script
+[1.294s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/__pycache__/spawn_robot.launch.cpython-310.pyc
+[1.302s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/joystick.launch.py
+[1.311s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_custom_world.launch.py
+[1.321s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_jsp.launch.py
+[1.332s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_sim.launch.py
+[1.342s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/robot_state_publisher.launch.py
+[1.351s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/spawn_robot.launch.py
+[1.361s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/package_run_dependencies/main_sim
+[1.372s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/parent_prefix_path/main_sim
+[1.381s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/ament_prefix_path.sh
+[1.391s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/ament_prefix_path.dsv
+[1.399s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/path.sh
+[1.408s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/path.dsv
+[1.416s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.bash
+[1.427s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.sh
+[1.440s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.zsh
+[1.448s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.dsv
+[1.456s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/package.dsv
+[1.465s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/packages/main_sim
+[1.476s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/cmake/main_simConfig.cmake
+[1.484s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/cmake/main_simConfig-version.cmake
+[1.494s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/package.xml
+[1.505s] Invoked command in '/home/jason/ros2_ws/build/main_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jason/ros2_ws/build/main_sim

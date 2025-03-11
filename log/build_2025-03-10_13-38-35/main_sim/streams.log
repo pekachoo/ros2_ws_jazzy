@@ -1,0 +1,29 @@
+[0.013s] Invoking command in '/home/jason/ros2_ws/build/main_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jason/ros2_ws/build/main_sim -- -j7 -l7
+[0.065s] Invoked command in '/home/jason/ros2_ws/build/main_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jason/ros2_ws/build/main_sim -- -j7 -l7
+[0.076s] Invoking command in '/home/jason/ros2_ws/build/main_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jason/ros2_ws/build/main_sim
+[0.085s] -- Install configuration: ""
+[0.085s] -- Execute custom install script
+[0.086s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/__pycache__/spawn_robot.launch.cpython-310.pyc
+[0.086s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/joystick.launch.py
+[0.086s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_custom_world.launch.py
+[0.086s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_jsp.launch.py
+[0.087s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_robot.launch.py
+[0.087s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_sim.launch.py
+[0.087s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/robot_state_publisher.launch.py
+[0.087s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/spawn_robot.launch.py
+[0.087s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/package_run_dependencies/main_sim
+[0.088s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/parent_prefix_path/main_sim
+[0.088s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/ament_prefix_path.sh
+[0.088s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/ament_prefix_path.dsv
+[0.088s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/path.sh
+[0.089s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/environment/path.dsv
+[0.089s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.bash
+[0.089s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.sh
+[0.089s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.zsh
+[0.089s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/local_setup.dsv
+[0.090s] -- Symlinking: /home/jason/ros2_ws/install/main_sim/share/main_sim/package.dsv
+[0.100s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/packages/main_sim
+[0.100s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/cmake/main_simConfig.cmake
+[0.100s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/cmake/main_simConfig-version.cmake
+[0.100s] -- Up-to-date symlink: /home/jason/ros2_ws/install/main_sim/share/main_sim/package.xml
+[0.102s] Invoked command in '/home/jason/ros2_ws/build/main_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jason/ros2_ws/install/joy_tester:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jason/ros2_ws/build/main_sim
