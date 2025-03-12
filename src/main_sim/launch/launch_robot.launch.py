@@ -13,7 +13,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
 
     # Get the urdf/xacro file path
-    path_to_urdf = "/home/jason/ros2_ws/src/main_sim/urdf/my_robot.urdf.xacro"
+    path_to_urdf = "/home/jason/ros2_ws/src/main_sim/urdf/robot.urdf.xacro"
 
     urdf_string = ParameterValue(Command(['xacro ', str(path_to_urdf)]), value_type=str)
 
@@ -41,7 +41,7 @@ def generate_launch_description():
                 "gz_sim.launch.py",
             )
         ]),
-        launch_arguments={"gz_args": f"-r -v 4 {world_file}"}.items(),
+        launch_arguments={"gz_args": ['-r -v4 ', world_file], 'on_exit_shutdown': 'true'}.items(),
     )
 
     # Spawn the robot in Gazebo Sim
@@ -50,7 +50,7 @@ def generate_launch_description():
         executable="create",
         arguments=[
             "-name",
-            "robot1",
+            "my_bot",
             "-topic",
             "/robot_description",
             "-x",
@@ -63,14 +63,29 @@ def generate_launch_description():
         output="screen",
     )
 
+    joint_broad_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_broad"],
+    )
+
+    twist_mux_params = os.path.join(get_package_share_directory('main_sim'),'config','twist_mux.yaml')
+    twist_mux = Node(
+        package="twist_mux",
+        executable="twist_mux",
+        parameters=[twist_mux_params, {'use_sim_time': True}],
+        remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+    )
+
     # Launch the full setup
     return LaunchDescription([
         DeclareLaunchArgument(
             'use_sim_time',
             default_value='false',
             description='Use sim time if true'),
-
+        twist_mux,
         node_robot_state_publisher,
         gz_sim,
-        spawn_entity
+        spawn_entity,
+        joint_broad_spawner
     ])
