@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 30
+    update_rate: 1000
     use_sim_time: true
 
     diff_cont:
@@ -21,7 +21,7 @@ diff_cont:
     wheel_separation: 0.35
     wheel_radius: 0.05
 
-    use_stamped_vel: false
+    # use_stamped_vel: false
 
     # open_loop: false    
 

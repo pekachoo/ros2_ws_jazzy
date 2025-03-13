@@ -4,7 +4,7 @@
 
     <ros2_control name="GazeboSystem" type="system">
         <hardware>
-            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
         </hardware>
         <joint name="left_wheel_joint">
             <command_interface name="velocity">
@@ -25,9 +25,9 @@
     </ros2_control>
 
     <gazebo>
-        <plugin name="gz_ros2_control" filename="libgazebo_ros2_control.so">
-            <param name="robot_description">robot_description</param>
-            <param name="use_sim_time">true</param>
+        <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin" filename="libgz_ros2_control-system.so">
+            <parameters>src/main_sim/config/my_controllers.yaml</parameters>
+            <parameters>/home/jason/ros2_ws/src/main_sim/config/ros_gz_ctrl_use_sim.yaml</parameters>
         </plugin>
     </gazebo>
 

@@ -30,7 +30,8 @@ def generate_launch_description():
     )
 
     # Use a custom Gazebo world (if needed)
-    world_file = '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz/gz-sim8/worlds/empty.sdf'
+    # world_file = '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz/gz-sim8/worlds/empty.sdf'
+    world_file = '/home/jason/ros2_ws/src/main_sim/worlds/empty.world'
 
     # Start Gazebo Sim
     gz_sim = IncludeLaunchDescription(
@@ -42,6 +43,12 @@ def generate_launch_description():
             )
         ]),
         launch_arguments={"gz_args": ['-r -v4 ', world_file], 'on_exit_shutdown': 'true'}.items(),
+    )
+
+    joystick = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory('main_sim'),'launch','joystick.launch.py'
+                )]), launch_arguments={'use_sim_time': 'true'}.items()
     )
 
     # Spawn the robot in Gazebo Sim
@@ -63,18 +70,35 @@ def generate_launch_description():
         output="screen",
     )
 
+    diff_drive_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["diff_cont"],
+    )
+
     joint_broad_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["joint_broad"],
     )
 
-    twist_mux_params = os.path.join(get_package_share_directory('main_sim'),'config','twist_mux.yaml')
+    twist_mux_params = '/home/jason/ros2_ws/src/main_sim/config/twist_mux.yaml'
     twist_mux = Node(
         package="twist_mux",
         executable="twist_mux",
         parameters=[twist_mux_params, {'use_sim_time': True}],
         remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+    )
+
+    bridge_params = '/home/jason/ros2_ws/src/main_sim/config/gz_bridge.yaml'
+    ros_gz_bridge = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        arguments=[
+            '--ros-args',
+            '-p',
+            f'config_file:={bridge_params}',
+        ]
     )
 
     # Launch the full setup
@@ -83,9 +107,12 @@ def generate_launch_description():
             'use_sim_time',
             default_value='false',
             description='Use sim time if true'),
-        twist_mux,
         node_robot_state_publisher,
+        joystick,
+        twist_mux,
         gz_sim,
         spawn_entity,
-        joint_broad_spawner
+        diff_drive_spawner,
+        joint_broad_spawner,
+        ros_gz_bridge
     ])
