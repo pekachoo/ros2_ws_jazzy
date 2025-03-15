@@ -2,6 +2,7 @@
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/joystick.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_custom_world.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_jsp.launch.py
+/home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_mecanum.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_robot.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_sim.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/robot_state_publisher.launch.py
