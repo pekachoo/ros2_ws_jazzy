@@ -90,7 +90,7 @@ def generate_launch_description():
         remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
     )
 
-    bridge_params = '/home/jason/ros2_ws/src/main_sim/config/gz_bridge.yaml'
+    bridge_params = '/home/jason/ros2_ws/src/main_sim/config/gz_bridge_mecanum.yaml'
     ros_gz_bridge = Node(
         package="ros_gz_bridge",
         executable="parameter_bridge",

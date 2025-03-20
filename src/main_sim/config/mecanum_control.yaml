@@ -3,13 +3,13 @@ controller_manager:
     update_rate: 1000
     use_sim_time: true
 
-    mecanum_drive_controller:
+    mecanum_cont:
       type: mecanum_drive_controller/MecanumDriveController
 
-    joint_broadcaster:
+    joint_broad:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-mecanum_drive_controller:
+mecanum_cont:
   ros__parameters:
     reference_timeout: 0.9
 
