@@ -13,7 +13,7 @@ mecanum_cont:
   ros__parameters:
 
     publish_rate: 50.0
-    reference_timeout: 0.9
+    reference_timeout: 1.1
 
 
     # Joint names for mecanum wheels (matching URDF)
@@ -29,10 +29,10 @@ mecanum_cont:
 
     base_frame_id: "base_link"
     odom_frame_id: "odom"
-    enable_odom_tf: true
+    enable_odom_tf: false
     
-    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
-    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
+    # pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
+    # twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
 
     # linear:
     #   x:
