@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/xacro">
 
-  <xacro:include filename="mecanum_inertial_macros.xacro"/>
+  <xacro:include filename="inertial_macros_mecanum_sphere.xacro"/>
 
   <!-- Define Materials -->
   <material name="white">
@@ -53,11 +53,6 @@
   <joint name="front_left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="front_left_wheel"/>
-    <!-- 
-      rpy ~ -1.5708 means rotating the cylinder by -90 deg around X,
-      so the cylinder's axis is along Y. 
-      Then the joint axis is <axis xyz="0 0 1"/>.
-    -->
     <origin xyz="0.15 0.17 0.025" rpy="-1.5708 0 0"/>
     <axis xyz="0 0 1"/>
   </joint>
