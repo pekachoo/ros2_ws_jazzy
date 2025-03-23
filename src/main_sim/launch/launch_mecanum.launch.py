@@ -13,7 +13,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
 
     # Get the urdf/xacro file path
-    path_to_urdf = "/home/jason/ros2_ws/src/main_sim/urdf/mecanum_robot.urdf.xacro"
+    path_to_urdf = "/home/jason/ros2_ws/src/main_sim/urdf/mecanum_sphere/mecanum_sphere.urdf.xacro"
 
     urdf_string = ParameterValue(Command(['xacro ', str(path_to_urdf)]), value_type=str)
 
