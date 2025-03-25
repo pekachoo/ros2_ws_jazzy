@@ -52,6 +52,10 @@
         <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin" filename="libgz_ros2_control-system.so">
             <parameters>/home/jason/ros2_ws/src/main_sim/config/mecanum_control.yaml</parameters>
             <parameters>/home/jason/ros2_ws/src/main_sim/config/ros_gz_ctrl_use_sim.yaml</parameters>
+              <ros>
+                <remapping>/mecanum_drive_controller/reference:=/cmd_vel</remapping>
+                <remapping>/mecanum_drive_controller/odom:=/odom</remapping>
+              </ros>
         </plugin>
     </gazebo>
 
