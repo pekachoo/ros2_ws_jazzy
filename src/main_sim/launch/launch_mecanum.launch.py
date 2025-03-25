@@ -42,7 +42,7 @@ def generate_launch_description():
                 "gz_sim.launch.py",
             )
         ]),
-        launch_arguments={"gz_args": ['-r -v4 ', world_file], 'on_exit_shutdown': 'true'}.items(),
+        launch_arguments={"gz_args": ['-r -v4 ', 'empty.sdf'], 'on_exit_shutdown': 'true'}.items(),
     )
 
     joystick = IncludeLaunchDescription(
