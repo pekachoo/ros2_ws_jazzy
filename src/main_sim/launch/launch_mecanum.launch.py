@@ -95,7 +95,7 @@ def generate_launch_description():
         package="ros_gz_bridge",
         executable="parameter_bridge",
         arguments=[
-            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
+            # '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
             '--ros-args',
             '-p',
             f'config_file:={bridge_params}',

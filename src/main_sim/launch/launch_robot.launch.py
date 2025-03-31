@@ -100,6 +100,37 @@ def generate_launch_description():
             f'config_file:={bridge_params}',
         ]
     )
+    slam_params = '/home/jason/ros2_ws/src/main_sim/config/mapper_params_online_async.yaml'
+    slam_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('slam_toolbox'),
+                'launch',
+                'online_async_launch.py'
+            )
+        ),
+        launch_arguments={
+            'params_file': slam_params,
+            'use_sim_time': 'true'
+        }.items()
+    )
+
+    nav2_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('nav2_bringup'),
+                'launch',
+                'navigation_launch.py'
+            )
+        ),
+        launch_arguments={
+            # 'params_file': slam_params,
+            'use_sim_time': 'true'
+        }.items()
+    )
+
+
+
 
     # Launch the full setup
     return LaunchDescription([
@@ -114,5 +145,7 @@ def generate_launch_description():
         spawn_entity,
         diff_drive_spawner,
         joint_broad_spawner,
-        ros_gz_bridge
+        ros_gz_bridge,
+        slam_launch,
+        # nav2_launch
     ])
