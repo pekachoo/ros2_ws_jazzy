@@ -115,6 +115,7 @@ def generate_launch_description():
         }.items()
     )
 
+    nav2_params = '/home/jason/ros2_ws/src/main_sim/config/nav2_params_differential'
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -124,8 +125,9 @@ def generate_launch_description():
             )
         ),
         launch_arguments={
-            # 'params_file': slam_params,
-            'use_sim_time': 'true'
+            'use_sim_time': 'true',
+            'autostart': 'true',
+            'params_file': nav2_params
         }.items()
     )
 
