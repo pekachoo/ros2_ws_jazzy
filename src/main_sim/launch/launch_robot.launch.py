@@ -115,7 +115,7 @@ def generate_launch_description():
         }.items()
     )
 
-    nav2_params = '/home/jason/ros2_ws/src/main_sim/config/nav2_params_differential'
+    nav2_params = '/home/jason/ros2_ws/src/main_sim/config/nav2_params_differential.yaml'
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -148,6 +148,6 @@ def generate_launch_description():
         diff_drive_spawner,
         joint_broad_spawner,
         ros_gz_bridge,
-        slam_launch,
+        # slam_launch,
         # nav2_launch
     ])

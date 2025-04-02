@@ -5,6 +5,7 @@
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_mecanum.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_robot.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_sim.launch.py
+/home/jason/ros2_ws/install/main_sim/share/main_sim/launch/launch_slamnav.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/robot_state_publisher.launch.py
 /home/jason/ros2_ws/install/main_sim/share/main_sim/launch/spawn_robot.launch.py
 /home/jason/ros2_ws/install/main_sim/share/ament_index/resource_index/package_run_dependencies/main_sim
