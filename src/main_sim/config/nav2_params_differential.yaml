@@ -50,3 +50,16 @@ bt_navigator:
   ros__parameters:
     use_sim_time: true
     default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
+
+collision_monitor:
+  ros__parameters:
+    use_sim_time: true
+    observation_sources: scan
+    scan:
+      type: laser
+      topic: /scan
+      obstacle_radius: 0.25
+      max_obstacle_height: 2.0
+      clearing: true
+      marking: true
+
