@@ -25,7 +25,7 @@ def generate_launch_description():
         }.items()
     )
 
-    nav2_params = '/home/jason/ros2_ws/src/main_sim/config/nav2_params_differential.yaml'
+    nav2_params = '/home/jason/ros2_ws/src/main_sim/config/nav2_params.yaml'
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
