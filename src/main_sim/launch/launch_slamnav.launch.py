@@ -31,13 +31,13 @@ def generate_launch_description():
             os.path.join(
                 get_package_share_directory('nav2_bringup'),
                 'launch',
-                'bringup_launch.py'
+                'navigation_launch.py'
             )
         ),
         launch_arguments={
             'use_sim_time': 'true',
             'autostart': 'true',
-            'use_collision_monitoring': 'false',
+            # 'use_collision_monitoring': 'false',
             'params_file': nav2_params
         }.items()
     )
