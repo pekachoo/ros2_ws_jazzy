@@ -53,7 +53,7 @@
             <parameters>/home/jason/ros2_ws/src/main_sim/config/mecanum_control.yaml</parameters>
             <parameters>/home/jason/ros2_ws/src/main_sim/config/ros_gz_ctrl_use_sim.yaml</parameters>
             <ros>
-                <remapping>/mecanum_cont/reference:=/cmd_vel</remapping>
+                <!-- <remapping>/mecanum_cont/reference:=/cmd_vel</remapping> -->
                 <remapping>/mecanum_cont/odometry:=/odom</remapping>
                 <remapping>/mecanum_cont/tf_odometry:=/tf</remapping>
             </ros>
