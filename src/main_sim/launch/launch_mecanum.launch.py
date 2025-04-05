@@ -86,7 +86,7 @@ def generate_launch_description():
     twist_mux = Node(
         package="twist_mux",
         executable="twist_mux",
-        parameters=[twist_mux_params, {'use_sim_time': True}],
+        parameters=[twist_mux_params, {'use_sim_time': True, 'use_stamped': True}],
         remappings=[('/cmd_vel_out','/cmd_vel_stamped')]
     )
 
@@ -110,7 +110,7 @@ def generate_launch_description():
             description='Use sim time if true'),
         node_robot_state_publisher,
         # joystick,
-        # twist_mux,
+        twist_mux,
         gz_sim,
         spawn_entity,
         mecanum_drive_spawner,
