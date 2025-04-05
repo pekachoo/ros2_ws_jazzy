@@ -82,12 +82,12 @@ def generate_launch_description():
         arguments=["joint_broad"],
     )
 
-    twist_mux_params = '/home/jason/ros2_ws/src/main_sim/config/twist_mux.yaml'
+    twist_mux_params = '/home/jason/ros2_ws/src/main_sim/config/twist_mux_mecanum.yaml'
     twist_mux = Node(
         package="twist_mux",
         executable="twist_mux",
         parameters=[twist_mux_params, {'use_sim_time': True}],
-        remappings=[('/cmd_vel_out','mecanum_cont/reference')]
+        remappings=[('/cmd_vel_out','/cmd_vel_stamped')]
     )
 
     bridge_params = '/home/jason/ros2_ws/src/main_sim/config/gz_bridge_mecanum.yaml'
@@ -110,7 +110,7 @@ def generate_launch_description():
             description='Use sim time if true'),
         node_robot_state_publisher,
         # joystick,
-        twist_mux,
+        # twist_mux,
         gz_sim,
         spawn_entity,
         mecanum_drive_spawner,
