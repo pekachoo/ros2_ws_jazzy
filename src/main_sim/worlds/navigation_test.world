@@ -71,6 +71,7 @@
       <pose>0 0 0 0 0 0</pose>
       <self_collide>false</self_collide>
     </model>
+    
     <model name='box'>
       <pose>3.2825211979544768 4.4584938294825296 0.49999999990199806 6.2287739151293738e-22 9.3279666454713669e-22 -3.6315533669320137e-22</pose>
       <link name='box_link'>
@@ -118,6 +119,38 @@
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
+    <model name="moving_box">
+  <static>false</static>
+  <pose>0 1 0.25 0 0 0</pose>
+  <link name="link">
+    <collision name="collision">
+      <geometry><box><size>0.5 0.5 0.5</size></box></geometry>
+    </collision>
+    <visual name="visual">
+      <geometry><box><size>0.5 0.5 0.5</size></box></geometry>
+    </visual>
+  </link>
+
+  <animation name="linear_move" filename="">
+    <interpolate_x>true</interpolate_x>
+    <interpolate_y>true</interpolate_y>
+    <interpolate_z>false</interpolate_z>
+    <keyframe>
+      <time>0</time>
+      <pose>0 1 0.25 0 0 0</pose>
+    </keyframe>
+    <keyframe>
+      <time>5</time>
+      <pose>2 1 0.25 0 0 0</pose>
+    </keyframe>
+    <keyframe>
+      <time>10</time>
+      <pose>0 1 0.25 0 0 0</pose>
+    </keyframe>
+  </animation>
+</model>
+
+
     <model name='box_0'>
       <pose>3.0095113535359594 -2.6911043344628873 0.49999999990199806 6.2287739151293738e-22 9.3279666454713669e-22 -3.6315533669320137e-22</pose>
       <link name='box_link'>
