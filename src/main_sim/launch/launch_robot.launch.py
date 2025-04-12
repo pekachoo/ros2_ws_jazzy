@@ -31,7 +31,7 @@ def generate_launch_description():
 
     # Use a custom Gazebo world (if needed)
     # world_file = '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz/gz-sim8/worlds/empty.sdf'
-    world_file = '/home/jason/ros2_ws/src/main_sim/worlds/navigation_test.world'
+    world_file = '/home/jason/ros2_ws/src/main_sim/worlds/dynamic_obstacle.world'
 
     # Start Gazebo Sim
     gz_sim = IncludeLaunchDescription(
@@ -141,7 +141,7 @@ def generate_launch_description():
             default_value='false',
             description='Use sim time if true'),
         node_robot_state_publisher,
-        joystick,
+        # joystick,
         twist_mux,
         gz_sim,
         spawn_entity,
