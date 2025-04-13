@@ -39,7 +39,7 @@
                 <scan>
                     <horizontal>
                         <!-- resolution of 1 (1 degree of error) -->
-                        <samples>360</samples>
+                        <samples>720</samples>
                         <min_angle>-3.14</min_angle>
                         <max_angle>3.14</max_angle>
                     </horizontal>

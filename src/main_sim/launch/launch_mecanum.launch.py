@@ -31,7 +31,7 @@ def generate_launch_description():
 
     # Use a custom Gazebo world (if needed)
     # world_file = '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz/gz-sim8/worlds/empty.sdf'
-    world_file = '/home/jason/ros2_ws/src/main_sim/worlds/simple_turn.world'
+    world_file = '/home/jason/ros2_ws/src/main_sim/worlds/updated_dynamic.world'
 
     # Start Gazebo Sim
     gz_sim = IncludeLaunchDescription(
