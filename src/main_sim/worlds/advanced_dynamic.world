@@ -73,84 +73,225 @@
       <self_collide>false</self_collide>
     </model>
     <model name="outer_wall_top">
-      <pose>5 6 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>10 1 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>10 1 1</size></box></geometry></visual></link>
+      <pose>0.0 2.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>20 2 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>20 2 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
     <model name="outer_wall_bottom">
-      <pose>5 -2 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>10 1 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>10 1 1</size></box></geometry></visual></link>
+      <pose>0.0 -14.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>20 2 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>20 2 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
     <model name="outer_wall_left">
-      <pose>0 2 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>1 8 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>1 8 1</size></box></geometry></visual></link>
+      <pose>-10.0 -6.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>2 16 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>2 16 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
     <model name="outer_wall_right">
-      <pose>10 2 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>1 8 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>1 8 1</size></box></geometry></visual></link>
+      <pose>10.0 -6.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>2 16 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>2 16 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
-    <!-- Inner static maze walls -->
     <model name="inner_vert_1">
-      <pose>3 4 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>0.4 3 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>0.4 3 1</size></box></geometry></visual></link>
+      <pose>-4.0 -2.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.8 6 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.8 6 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
     <model name="inner_horiz_1">
-      <pose>6 3.5 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>4 0.4 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>4 0.4 1</size></box></geometry></visual></link>
+      <pose>2.0 -3.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>8 0.8 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>8 0.8 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
     <model name="inner_vert_2">
-      <pose>7 1 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>0.4 2.5 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>0.4 2.5 1</size></box></geometry></visual></link>
+      <pose>4.0 -8.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.8 5 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.8 5 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
     <model name="inner_horiz_2">
-      <pose>4 0 0.5 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>4 0.4 1</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>4 0.4 1</size></box></geometry></visual></link>
+      <pose>-2.0 -10.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>8 0.8 1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>8 0.8 1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>true</static>
     </model>
-    
     <model name="moving_box_1">
-      <pose>5 2 0.25 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>0.5 0.5 0.5</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>0.5 0.5 0.5</size></box></geometry></visual></link>
+      <pose>0.0 -6.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>false</static>
     </model>
-    
     <model name="moving_box_2">
-      <pose>6 1 0.25 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>0.5 0.5 0.5</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>0.5 0.5 0.5</size></box></geometry></visual></link>
+      <pose>2.0 -8.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>false</static>
     </model>
-    
     <model name="moving_box_3">
-      <pose>3.5 -1 0.25 0 0 0</pose>
-      <link name="link"><collision name="col"><geometry><box><size>0.5 0.5 0.5</size></box></geometry></collision>
-        <visual name="vis"><geometry><box><size>0.5 0.5 0.5</size></box></geometry></visual></link>
+      <pose>-3.0 -12.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
       <static>false</static>
     </model>
-
-
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>
       <cast_shadows>true</cast_shadows>
