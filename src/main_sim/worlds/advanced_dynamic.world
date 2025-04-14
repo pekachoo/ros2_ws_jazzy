@@ -78,14 +78,14 @@
         <collision name="col">
           <geometry>
             <box>
-              <size>20 2 1</size>
+              <size>20 0.5 1</size>
             </box>
           </geometry>
         </collision>
         <visual name="vis">
           <geometry>
             <box>
-              <size>20 2 1</size>
+              <size>20 0.5 1</size>
             </box>
           </geometry>
         </visual>
@@ -98,14 +98,14 @@
         <collision name="col">
           <geometry>
             <box>
-              <size>20 2 1</size>
+              <size>20 0.5 1</size>
             </box>
           </geometry>
         </collision>
         <visual name="vis">
           <geometry>
             <box>
-              <size>20 2 1</size>
+              <size>20 0.5 1</size>
             </box>
           </geometry>
         </visual>
@@ -118,14 +118,14 @@
         <collision name="col">
           <geometry>
             <box>
-              <size>2 16 1</size>
+              <size>0.5 16 1</size>
             </box>
           </geometry>
         </collision>
         <visual name="vis">
           <geometry>
             <box>
-              <size>2 16 1</size>
+              <size>0.5 16 1</size>
             </box>
           </geometry>
         </visual>
@@ -138,14 +138,14 @@
         <collision name="col">
           <geometry>
             <box>
-              <size>2 16 1</size>
+              <size>0.5 16 1</size>
             </box>
           </geometry>
         </collision>
         <visual name="vis">
           <geometry>
             <box>
-              <size>2 16 1</size>
+              <size>0.5 16 1</size>
             </box>
           </geometry>
         </visual>
